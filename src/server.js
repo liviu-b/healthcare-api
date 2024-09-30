@@ -3,10 +3,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const patientRoutes = require('./routes/patientRoutes');
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/api/patients', patientRoutes);
 
 const PORT = process.env.PORT || 5000;
 
