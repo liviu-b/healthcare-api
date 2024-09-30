@@ -1,4 +1,4 @@
-# HealthTech API for Patient Management 
+# HealthTech API for Patient Management
 
 ## Overview
 The **HealthTech API** is designed to securely manage patient data, schedule appointments, and integrate with external healthcare systems using FHIR (Fast Healthcare Interoperability Resources). This API provides CRUD functionality for patients, allowing healthcare professionals to manage patient records efficiently.
