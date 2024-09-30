@@ -3,7 +3,7 @@
 ## Overview
 The **HealthTech API** is designed to securely manage patient data, schedule appointments, and integrate with external healthcare systems using FHIR (Fast Healthcare Interoperability Resources). This API provides CRUD functionality for patients, allowing healthcare professionals to manage patient records efficiently.
 
-## Features 
+## Features
 - Patient management: Create, update, delete, and retrieve patient records.
 - Appointment management (coming soon).
 - Secure data storage with MongoDB.
