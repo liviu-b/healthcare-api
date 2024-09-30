@@ -4,11 +4,16 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const patientRoutes = require('./routes/patientRoutes');
+const errorHandler = require('./middleware/errorHandler');
+const requestLogger = require('./middleware/requestLogger');
+
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/api/patients', patientRoutes);
+app.use(requestLogger);  // Apply request logger to all incoming requests
+app.use(errorHandler);  // Use error handler after all routes
 
 const PORT = process.env.PORT || 5000;
 
